@@ -19,3 +19,9 @@ a.active{
   font-weight: 700 !important;
   color:rgb(71, 43, 235) !important;
 }
+
+
+.navbar-toggler{
+  line-height: 1.5;
+  transform: scale(.9);
+}
