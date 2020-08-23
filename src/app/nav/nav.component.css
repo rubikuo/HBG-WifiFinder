@@ -17,9 +17,14 @@ small.welcome-msg {
 
 a.active{
   font-weight: 700 !important;
-  color:rgb(71, 43, 235) !important;
+  color:rgb(12, 81, 170) !important;
+ 
 }
 
+.nav-link{
+  font-size: 1.3rem;
+
+}
 
 .navbar-toggler{
   line-height: 1.5;

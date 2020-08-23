@@ -3,8 +3,8 @@
 
   <!-- Navbar brand -->
   <div class="nav-wrapper">
-    <a class="navbar-brand" href="#"><i class="fas fa-wifi"></i> HBG Wifi Finder</a>
-
+    <!-- <a href="#"><i class="fas fa-wifi"></i> HBG Wifi Finder</a> -->
+    <img class="navbar-brand"  src="../../assets/HBGLogo-grey.png" alt="HBG-WFLOGO" style="width:7rem"/>
     <small class="welcome-msg">
       <span *ngIf="user | async"><i class="fas fa-user"></i> {{ (user | async)?.email }}</span>
       <!--if user exits, it will show the welcome ... otherwise it will not show-->
@@ -23,7 +23,7 @@
     <!-- Links -->
     <ul  class="navbar-nav mr-auto">
       <li class="nav-item ">
-        <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/">Home </a>
+        <a class="nav-link mt-2" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/">Home </a>
       </li>
       <li class="nav-item" *ngIf="user | async">
         <a class="nav-link" routerLinkActive="active" routerLink="/wifipoint"> Wifi Hotspot</a>
