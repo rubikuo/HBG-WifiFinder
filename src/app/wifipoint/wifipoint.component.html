@@ -1,0 +1,15 @@
+<div class="wrapper">
+  <h1 class="text-dark text-center text-capitalize font-weight-bold " style="font-size: 2rem;" >HBG Wifi Hotspots</h1>
+
+    <form #myForm="ngForm" (ngSubmit)="searchWifiHotSpot()" id="top">
+      <input type="text" [(ngModel)]="searchterm" name="Name" id="search-input" placeholder="Search by Street Name"
+        class="mr-1">
+      <button type="submit" class="btn btn-info"><i class="fas fa-search"></i></button>
+    </form>
+    
+
+  <div class=" map-ctn mt-5 mb-5">
+    <p class=" tips">Tips: Hover over the pin icon for detailed location information </p>
+    <div id="map"></div>
+  </div>
+</div>

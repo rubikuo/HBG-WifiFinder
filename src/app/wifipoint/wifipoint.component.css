@@ -1,0 +1,46 @@
+
+form {
+  width: 60%;
+  max-width: 700px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  justify-content: center;
+}
+
+input#search-input {
+  width: 60%;
+  padding: 0 10px;
+}
+
+.map-ctn {
+  margin: 0 auto;
+  width: 60vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.marker {
+  display: block;
+  border-radius: 70%;
+  cursor: pointer;
+  padding: 5px;
+}
+
+div.mapbox-popup-content {
+  padding: 5px;
+}
+
+.tips{
+  font-weight: 700;
+  color: blue;
+}

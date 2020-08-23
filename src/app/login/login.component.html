@@ -1,0 +1,22 @@
+<form (ngSubmit)="login()">
+
+    <div class="form-group mx-auto d-block">
+      <label for="email">Email</label>
+      <input type="email" name="name" class="form-control" id="email" [(ngModel)]="email" placeholder="example@domain.com" required>
+      <!--if you use ngModel you have to import "FormsModule"  in the app.module.ts-->
+    </div>
+    <div class="form-group mx-auto d-block">
+      <label for="password">Password <small>(At least 6 characters)</small></label>
+      <input type="password" name="password" class="form-control" style="max-width: 30rem;" id="password"
+        [(ngModel)]="password" placeholder="******" required>
+    </div>
+    <div class="wrapper">
+      <button type="submit" class="btn btn-info" [disabled]="!email || !password || password.length < 6">Log
+        In</button>
+      <!-- when there is no email, no password or the password is less than 6 character. then the button will be disabled-->
+      <p class="warningText" *ngIf="invalidForm">Invalid email or password</p>
+      <!--this p tag will only show if invalidForm ( an err occurs in register () which is written in register.component.ts) -->
+      <div><span>Not registered yet?</span> <a class="linkItem" routerLink="/register"> Register</a></div>
+    </div>
+    
+</form>

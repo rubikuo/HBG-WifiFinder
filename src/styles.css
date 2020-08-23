@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+  font-family: 'Mandali', sans-serif;
+}
+
+
+/* -- to fix the underline in the nav bar --*/
+.navtext:hover, .navtext:focus, .linkItem:hover { text-decoration: none;
+}
+
+
+body {
+  background:linear-gradient(0deg,rgba(169, 194, 223, 0.842),rgba(224, 225, 228, 0.76)),
+  url("https://images.hdsydsvenskan.se/980x588/xR3eQqTaZs2NJ0IkKnSB9tjp7kc.jpg");
+
+      background-position: center center;
+      background-repeat:  no-repeat;
+      background-attachment: fixed;
+      background-size:  cover;
+      background-color: rgb(245, 241, 241);
+
+}
+
+footer{
+  margin: 0 auto;
+  font-size: 0.7rem; 
+}

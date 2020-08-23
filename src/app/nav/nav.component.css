@@ -1,0 +1,21 @@
+.headbrand,
+.fa-wifi {
+  color: #444343;
+  text-shadow: 1px 0px 1px rgb(17, 17, 17);
+}
+
+.nav-wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+small.welcome-msg {
+  font-size: 1rem;
+}
+
+a.active{
+  font-weight: 700 !important;
+  color:rgb(71, 43, 235) !important;
+}

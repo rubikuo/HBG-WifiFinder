@@ -1,0 +1,45 @@
+<!--Navbar-->
+<nav class="navbar navbar-light light-blue lighten-4">
+
+  <!-- Navbar brand -->
+  <div class="nav-wrapper">
+    <a class="navbar-brand" href="#"><i class="fas fa-wifi"></i> HBG Wifi Finder</a>
+
+    <small class="welcome-msg">
+      <span *ngIf="user | async"><i class="fas fa-user"></i> {{ (user | async)?.email }}</span>
+      <!--if user exits, it will show the welcome ... otherwise it will not show-->
+      <!--it will not refresh the page while loop through the user-->
+    </small>
+
+  </div>
+  <!-- Collapse button -->
+  <button class="navbar-toggler " type="button" data-toggle="collapse"
+    data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+    aria-label="Toggle navigation"><span class="dark-blue-text"><i class="fas fa-bars fa-1x"></i></span></button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+
+    <!-- Links -->
+    <ul  class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/">Home </a>
+      </li>
+      <li class="nav-item" *ngIf="user | async">
+        <a class="nav-link" routerLinkActive="active" routerLink="/wifipoint"> Wifi Hotspot</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active" routerLink="/contact"> Contact</a>
+      </li>
+      <li class="nav-item" *ngIf="user | async">
+        <a class="nav-link" routerLink="#" (click)="signOut()">Log Out</a>
+      </li>
+    </ul>
+
+    <!-- Links -->
+
+  </div>
+  <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->

@@ -1,0 +1,19 @@
+<div class="jumbotron bg-transparent"
+  style="width: 80%; height:85vh; margin: 0 auto; display: flex; justify-content: center;">
+  <div>
+    <h1 class="text-dark text-capitalize font-weight-bold" style="font-size: 2rem;"> Welcome to HBG Wifi Finder!</h1>
+    <p class="lead"> Do you know Helsingborg is a "wifi-friendly" city?
+      <br>There are 203 wifi hotspots available for Helsingborgers and visitors.
+      <br> Join us and find out where they are ...
+
+    </p>
+
+
+    <div *ngIf="!(user | async)">
+      <!-- if users do not exit show the following -->
+      <a routerLink="/register" class="btn btn-info font-weight-bold mr-2" style="width: 6rem;">Register</a>
+      <a routerLink="/login" class="btn btn-light font-weight-bold" style="width: 6rem;">Log In</a>
+
+    </div>
+  </div>
+</div>
